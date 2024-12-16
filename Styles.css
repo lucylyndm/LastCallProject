@@ -1,0 +1,512 @@
+/* Styles for the webpage */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 100px;
+    font-family: 'Lobster Two';
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'Lobster Two';
+    color: black;
+    text-align: left;
+    margin-top: 0; /* Ensure there is no top margin */
+    margin-bottom: 0; /* Ensure there is no bottom margin */
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically */
+}
+
+.title-card {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin: 20px;
+}
+
+.card {
+    border: 1px solid #ddd; /* Add a border to the card */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the card */
+    margin: 20px; /* Add margin around the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #fff; /* Set background color */
+    position: relative; /* Position relative to contain absolutely positioned elements */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.cart-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cart-content h2 {
+    font-size: 20px;
+    font-family: 'Raleway';
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.cart-content p {
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: #666;
+    margin: 5px 0;
+}
+
+.cart-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-footer strong {
+    font-size: 18px;
+    font-family: 'Raleway';
+    color: #333;
+    margin-right: 20px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    font-family: 'Raleway';
+    background-color: #BE3900;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.order-summary {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the order summary */
+    max-width: 600px; /* Optional: Set a max width */
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+    gap: 10px; /* Add space between the texts */
+}
+
+.summary-item.total {
+    font-weight: bold;
+}
+
+.summary-label {
+    font-family: 'Raleway';
+}
+
+.summary-value {
+    font-family: 'Raleway';
+    color: black;
+}
+
+.continue-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 60px auto; /* Center the continue button and add bottom margin */
+    max-width: 600px; /* Optional: Set a max width */
+    padding-bottom: 80px; /* Add space for the bottom navigation bar */
+}
+
+.continue-button button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.bell-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center; /* Center the search bar horizontally */
+    margin: 0px 0; /* Add some margin for spacing */
+}
+
+.search-bar-icon {
+    width: 300px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between; /* Distribute space between containers */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    width: 100%; /* Ensure the categories take full width */
+    max-width: 1200px; /* Set a max width */
+    margin: 0 auto; /* Center the categories */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.category1, .category2, .category3 {
+    flex: 1; /* Allow categories to grow and shrink */
+    margin: 0 10px; /* Add some margin between categories */
+    padding: 20px;
+    border: 2px solid #000; /* Add a border (stroke) around the categories */
+    background-color: #f0f0f0; /* Background color for categories */
+    text-align: center; /* Center text inside categories */
+    border-radius: 30px; /* Add rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.category1:hover, .category2:hover, .category3:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.category1 p, .category2 p, .category3 p {
+    margin: 0;
+    font-family: 'Raleway';
+    color: #333;
+}
+
+.card {
+    border: 1px solid #ddd; /* Add a border to the card */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the card */
+    margin: 20px; /* Add margin around the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #fff; /* Set background color */
+    position: relative; /* Position relative to contain absolutely positioned elements */
+}
+
+.card .title-card {
+    font-size: 24px; /* Adjust the font size */
+    font-family: 'Raleway', sans-serif; /* Use the Raleway font */
+    font-weight: bolder; /* Make the text bold */
+    color: blac; /* Set the text color */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.card .image-container {
+    position: relative; /* Position relative to contain absolutely positioned elements */
+}
+
+.card .image-container img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.card .badge, .card .favorite {
+    font-family: 'Raleway'; /* Use the Raleway font */
+    position: absolute; /* Position absolutely */
+    top: 10px; /* Position from the top */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #BE3900; /* Set background color */
+    color: #fff; /* Set text color */
+}
+
+.card .badge {
+    right: 10px; /* Position from the right */
+}
+
+.card .favorite {
+    left: 10px; /* Position from the left */
+    font-size: 24px; /* Adjust the font size */
+}
+
+.card .content {
+    margin-top: 10px; /* Add some space above the content */
+}
+
+.card .details {
+    font-family: 'Raleway'; /* Use the Raleway font */
+    font-weight: bold;
+    font-size: 20px; /* Adjust the font size */
+    color: black; /* Set the text color */
+    margin-bottom: 10px; /* Add some space below the details */
+}
+
+.card .pickup-time {
+    font-family: 'Raleway'; /* Use the Raleway font */
+    font-size: 16px; /* Adjust the font size */
+    font-weight: lighter;
+    color: black; /* Set the text color */
+    margin-bottom: 10px; /* Add some space below the details */
+}
+
+.card .price {
+    font-family: 'Raleway'; /* Use the Raleway font */
+    font-size: 16px; /* Adjust the font size */
+    color: black; /* Set the text color */
+    margin-bottom: 10px; /* Add some space below the price */
+}
+
+.card .rating {
+    font-family: 'Raleway'; /* Use the Raleway font */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+
+.card .rating img {
+    width: 20px; /* Adjust the size of the star image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add some space to the right of the star */
+}
+
+.card .rating p {
+    font-family: 'Raleway'; /* Use the Raleway font */
+    font-size: 14px; /* Adjust the font size */
+    color: #333; /* Set the text color */
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #BE3900;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.bottom-nav .nav-item {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-nav .nav-item img {
+    width: 24px; /* Adjust the size of the icons */
+    height: 24px; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Add some space below the icons */
+    transition: filter 0.3s ease; /* Smooth transition for filter effect */
+}
+
+.bottom-nav .nav-item:hover img {
+    filter: invert(100%); /* Change color to white on hover */
+}
+
+.bottom-nav .nav-item img {
+    width: 24px; /* Adjust the size of the icons */
+    height: 24px; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Add some space below the icons */
+}
+
+.bottom-nav .nav-item:hover {
+    color: white; /* Change color on hover */
+}
+
+.container {
+    background-image: url('img1.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 1rem;
+}
+
+.overlay-image {
+    position: absolute; /* Position the overlay image absolutely */
+    bottom: 0; /* Align the image to the bottom */
+    left: 0; /* Adjust the position as needed */
+    width: 100%; /* Adjust the size as needed */
+    height: 310px; /* Maintain aspect ratio */
+    z-index: 1; /* Set z-index to place it behind other elements */
+}
+
+.title-text, .buttons, .icons {
+    position: relative; /* Make these elements positioned */
+    z-index: 2; /* Set z-index to place them above the overlay image */
+}
+
+.buttons {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+button {
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Raleway;
+    margin: 8px 2px;
+    border: 2px 2px;
+    cursor: pointer;
+    border-radius: 25px; /* Increase border-radius to make the button more round */
+    width: 100%;
+    max-width: 300px; /* Set a max width */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.login-button {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    color: black;
+}
+
+.login-button:hover {
+    background-color: #D9D9D9;
+    border-color: black;
+    color: black;
+}
+
+.signup-button {
+    background-color: #BE3900;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.signup-button:hover {
+    background-color: #BB7E64;
+    border-color: black;
+    color: #FFFFFF;
+}
+
+.icons {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.icons p {
+    font-size: 10px; /* Use relative units */
+    font-family: 'Raleway';
+    color: #FFFFFF; 
+    margin: 1rem 0; /* Use relative units */
+}
+
+.icons img {
+    width: 30px; 
+    height: 30px; 
+    margin: 0 10px; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .search-bar {
+        max-width: 100%; /* Remove max width for smaller screens */
+    }
+
+    .categories {
+        flex-direction: column; /* Stack categories vertically on smaller screens */
+        align-items: center; /* Center categories */
+        padding: 20px; /* Add padding to the sides when stacked */
+    }
+
+    .category1, .category2, .category3 {
+        margin: 10px 0; /* Add margin between categories */
+        width: calc(100% - 40px); /* Make categories full width with padding */
+        padding: 20px 10px; /* Add padding to the sides when stacked */
+    }
+
+    .cart-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .cart-content {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 10px; /* Add top margin for spacing */
+    }
+
+    .cart-footer {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin-top: 20px; /* Add top margin for spacing */
+    }
+
+    .cart-footer strong {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .quantity-controls {
+        width: 100%; /* Ensure quantity controls take full width */
+        justify-content: space-between; /* Distribute space between items */
+    }
+
+    .order-summary {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .continue-button {
+        width: 90%; /* Adjust width for smaller screens */
+        justify-content: center; /* Center the continue button */
+    }
+
+    .continue-button button {
+        width: 100%; /* Ensure the button takes full width */
+    }
+}
